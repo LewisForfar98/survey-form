@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <heading>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take the time to fill out the survey below</p>
+  </heading>
+  <form id="survey-form">
+      <div id="form1">
+        <label id="name-label">Name</label><br>
+          <input type = "text" id="name" placeholder="Enter your name" required class="text-box">
+        </div>
+        <div id="form1">
+          <label id="email-label">Email</label><br>
+          <input type = "email" id="email" placeholder="Enter your email" required class="text-box">
+        </div>
+        <div id="form1">
+          <label id="number-label">Age (Optional)</label><br>
+          <input type="number" id="number" placeholder="Enter your age" min="1" max="99" class="text-box">
+        </div>
+        <div id="form1">
+          <label id="dropdown">How satisfied are you with the service?</label><br>
+          <select id="dropdown" required>
+            <option value="">--Please choose an option--</option>
+            <option value="Very Satisfied">Very Satisfied</option>
+            <option value="Satisfied">Satisfied</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Slightly unsatisfied">Slightly Unsatisfied</option>
+            <option value="Extremely unsatisfied">Extremely Unsatisfied</option>
+          </select>
+        </div>
+        <div id="form1">
+          <label id="Avenger" required>Who is your favourite Avenger?</label><br>
+          <input type="radio" name="FavAveng" value="captain" class="favaveng" checked>Captain America</input><br>
+          <input type="radio" name="FavAveng" value="hulk" class="favaveng">The Hulk</input><br>
+          <input type="radio" name="FavAveng" value="thor" class="favaveng">Thor</input><br>
+          <input type="radio" name="FavAveng" value="iron" class="favaveng">Iron Man</input><br>
+          <input type="radio" name="FavAveng" value="marvel" class="favaveng">Captain Marvel</input><br>
+        </div>
+        <div id="form1">
+          <label id="checkbox" required>What are your favourite Marvel movie franchise?</label><br>
+          <input type="checkbox" value="Thor" class="movie">Thor</input><br>
+          <input type="checkbox" value="Guardians" class="movie">Guardians of the Galaxy</input><br>
+          <input type="checkbox" value="Avengers" class="movie">Avengers</input><br>
+          <input type="checkbox" value="Captain America" class="movie">Captain America</input><br>
+          <input type="checkbox" value="Spiderman" class="movie">Spiderman</input><br>
+          <input type="checkbox" value="Other" class="movie">Other</input><br>
+        </div>
+        <div id="form1">
+          <label id="text">If you selected other, please give more detail below</label><br>
+          <textarea id="text">
+          </textarea>
+        </div>
+        <div id="form1">
+          <button id="submit">Submit</button>
+        </div>
+      </form>
+</body>
+</html>
